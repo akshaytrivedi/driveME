@@ -1,8 +1,9 @@
 # driveME
 
 Next steps:
-What is the problem?
-Image Segmentation or Bounding box object detection or both
+It is instance segmentation problem and Mask-RCNN do really well on it
+Question-> How do we get the pizel value in the image
+
 
 
 Things done:

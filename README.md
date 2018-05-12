@@ -1,21 +1,45 @@
 # driveME
 
-Next steps:
-It is instance segmentation problem and Mask-RCNN do really well on it
+Tried writing my own MaskRCNN first(implementation in fair-maskrcnn). This is giving errors which are hard to debug and this implementation is very slow.
 
-Question-> How do we get the pizel value in the image
+So moved to matterport Mask RCNN implementation
+
+Using matterport for the competition  
+
+1. Run matterport model on simple images (DONE)
+
+2. Run matterport model on Kaggle dataset (DONE)
+
+3. Evaluate the matterport model 
+	Run on test set (Done)
+	Submit test set predictions to Kaggle (Getting Errors)
+	Spilt training data into train and validation set (In progress)
+	Evaluate on validation set and visualize matterport model errors
+
+4. How we can better same matterport model to improve prediction
+	Training/Fintuning the model
+	Landscapes dataset
+	Test image augmentation (May be decreasing size)
+	Ensemble of each category i.e we train one classifer for each category vs background
+	Ensemble of each video i.e predicting for each image of a video
+	Semantic Segmentation for Videos
+	
+5. Improving the model architecture
 
 
-TODO till April 28th:
-
-1. Seeing an example usecase of mask r-cnn.. what data format it needs and a correct implementation.. Will we train it??
-
-2. Knowing the cvpr data and Pre-processing it in format that mask r-cnn expects
-
-3. Training mask r-cnn and seeing the results.
 
 
-Things done:
 
-Complete training data at /scratch/at3577/cvpr
+
+
+
+
+
+
+
+
+
+
+
+
 

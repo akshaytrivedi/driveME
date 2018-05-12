@@ -274,9 +274,7 @@ def vis_one_image(
     # cmap = plt.get_cmap('rainbow')
     # colors = [cmap(i) for i in np.linspace(0, 1, len(kp_lines) + 2)]
 
-    fig = plt.figure(frameon=False)
-    fig.set_size_inches(im.shape[1] / dpi, im.shape[0] / dpi)
-    ax = plt.Axes(fig, [0., 0., 1., 1.])
+    fig, ax = plt.subplots(1, figsize=(20, 20))
     ax.axis('off')
     fig.add_axes(ax)
     ax.imshow(im)
@@ -297,14 +295,14 @@ def vis_one_image(
             plt.Rectangle((bbox[0], bbox[1]),
                           bbox[2] - bbox[0],
                           bbox[3] - bbox[1],
-                          fill=False, edgecolor='g',
-                          linewidth=0.5, alpha=box_alpha))
+                          fill=False, edgecolor='r',
+                          linewidth=2, alpha=box_alpha))
 
         if show_class:
             ax.text(
                 bbox[0], bbox[1] - 2,
                 get_class_string(classes[i], score, dataset),
-                fontsize=3,
+                fontsize=10,
                 family='serif',
                 bbox=dict(
                     facecolor='g', alpha=0.4, pad=0, edgecolor='none'),

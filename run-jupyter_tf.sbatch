@@ -6,7 +6,7 @@
 #SBATCH --mem=20GB
 #SBATCH --time=12:00:00
 
-module purge
+
 module load jupyter-kernels/py2.7
 module load scikit-image/intel/0.13.1
 
